@@ -1,0 +1,139 @@
+/* Your app custom styles here */
+:root {
+  --dark-brown: #472d30;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+.audio_btn {
+  margin-bottom: 50px;
+}
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+  color: var(--dark-brown);
+}
+
+.loading-page .loading-page__title {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.loading-page .loading-page__img {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.loading-page .loading-page__loading-text {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.loading-page .loading-page__app-info {
+  position: absolute;
+  bottom: 10px;
+  font-size: 16;
+  font-weight: 200;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.predicting-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: auto;
+  color: var(--dark-brown);
+}
+
+.predicting-page__title {
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+.predicting-page__description {
+  font-size: 25px;
+}
+
+.predicting-page__chord-card {
+  width: 250px;
+  height: 250px;
+  margin: 30px auto;
+  box-shadow: 1px 1px 12px -3px rgba(0, 0, 0, 0.55);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.predicting-page__chord-card.is-green {
+  box-shadow: 1px 1px 15px 5px #01AF00;
+  color: #01AF00;
+}
+
+.predicting-page__chord-card.is-flipped {
+  transform: rotateY(-180deg);
+}
+
+.predicting-page__card-face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.predicting-page__chord-name {
+    font-size: 60px;
+}
+
+.predicting-page .card-back {
+  transform: rotateY(180deg);
+}
+
+.predicting-page__chord-img {
+  width: 200px;
+}
+
+.predicting-page__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.predicting-page__button-reveal {
+  width: 130px;
+  height: 30px;
+  padding: 5px 30px 12px 30px;
+  margin: 5px auto;
+
+  font-size: 25px;
+  background-color: var(--dark-brown);
+  color: white;
+  border: 3px solid var(--dark-brown);
+  border-radius: 10px;
+}
+
+.predicting-page__button-next {
+  width: 130px;
+  height: 30px;
+  padding: 5px 30px 12px 30px;
+  margin: 5px auto;
+
+  font-size: 25px;
+  border: 3px solid var(--dark-brown);
+  border-radius: 10px;
+  color: var(--dark-brown);
+}
